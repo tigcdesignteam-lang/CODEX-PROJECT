@@ -23,14 +23,16 @@ The final PDF supersedes earlier render concepts, including ST-11's back graphic
 
 A Quantity column contains 400 for each of the 44 colourway rows, as requested (17,600 total).
 
-## Pantone references
+## Pantone references — revised from the image pixels
 
-The Excel now has a **Pantone TCX Reference** column with garment-part allocations, TCX numbers, reference-library shade names and visible status flags. [Download the part-by-part colour reference CSV](Pantone_References_By_Colour.csv). The workbook remains one sheet with 44 colourways, 44 images and Quantity 400 per row.
+The earlier colour-name-based Pantone proposals have been replaced with **approximate image-based digital matches** after user review. [Download the garment/sample/reference comparison PDF](Pantone_Visual_Comparison.pdf), and [part-by-part reference CSV](Pantone_References_By_Colour.csv).
 
-- **[PDF]**: printed in the user's final PDF, with the number/name located in the checked reference dataset. This does not certify the physical colour match.
-- **[PROPOSED]**: a suggested TCX design reference from render appearance. These are not exact measured matches or production-approved shades. Display names may differ from Pantone reference-library names.
-- The PDF's **Eucalyptus 19-0223 TCX** and **Earthy Brown 19-2421 TCX** could not be located in the checked reference dataset. Their rows are highlighted; supplier verification is required. Proposed alternatives are **16-0110 TCX Desert Sage** and **18-1222 TCX Cocoa Brown**, respectively. Source-label codes are preserved in comments, not presented as validated production codes.
-- Numbers and reference-library names were cross-checked using [pantone-tcx 2.2.4](https://www.npmjs.com/package/pantone-tcx) ([source repository](https://github.com/pedroduke/pantone-tcx), ISC licence). This is a third-party digital dataset, not official Pantone certification.
-- Approve every colour against a current physical Pantone FHI TCX cotton standard and the actual yarn / knit lab dip before production. Lighting, compression, yarn fibre and screen rendering prevent exact physical matching from these images alone.
+The single-sheet Excel retains 44 colourways, their 44 original final-render images, and Quantity 400 in every row. It now includes sampled-image swatches, proposed digital TCX references and TCX screen swatches alongside each garment. Thin white/blue pinstripes also visible on ST-12 are included in the component audit.
 
-Pantone additions apply to the Excel and CSV. Earlier labelled PDF and Canva-importable presentation retain their existing colour-name labels.
+Fabric-region pixels were selected from the final PDF render crops using local medians and separate stripe/embroidery masks; skin, background and obvious shadows were checked visually. Sample coordinates and selectors are in the CSV and cell comments. The closest reference is computed using sRGB to CIELAB D65 and CIEDE2000; the implementation passes the three stated Sharma reference test pairs. The digital reference data is [pantone-tcx 2.2.4](https://www.npmjs.com/package/pantone-tcx) ([source](https://github.com/pedroduke/pantone-tcx), ISC licence), a third-party RGB dataset, not an official Pantone measurement or certification.
+
+**Every match is approximate.** The comparison is between image pixels and listed RGB approximations of TCX colours. It cannot recover the intended physical yarn shade, correct unknown lighting/white balance, or certify a production match. Screen deltaE00 values are not physical colour tolerances. Very small micro-stripes and embroidery are especially uncertain in the compressed PDF. Repeated generic colour names can produce different digital proposals in differently lit renders.
+
+Original numbers printed in the supplied PDF are retained separately in the CSV when previously transcribed; they do not automatically override the visual match. The two unlocated PDF labels (Eucalyptus 19-0223 and Earthy Brown 19-2421) remain unverified source information.
+
+Approve every colour using a current physical Pantone FHI TCX cotton standard and an actual yarn/knit lab dip before production. The existing labelled Canva-importable deck has not been modified with these approximate references.
