@@ -1,3 +1,6 @@
+> **Latest revision: [Final Canva update — 44 colourways](final-canva-update/README.md).**
+> This replaces the earlier 37-colourway concept below with the final user-supplied PDF range.
+
 # Flat Knit Range
 
 19 styles, 37 colourways, and 74 front/back torso views.
