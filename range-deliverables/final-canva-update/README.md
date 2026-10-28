@@ -22,3 +22,15 @@ Existing IDs are preserved by matching garment designs. ST-08 essential crew is 
 The final PDF supersedes earlier render concepts, including ST-11's back graphic placement and V neckline, ST-14/15 palettes, and ST-18/19 fabric labels. Other than source-embedded names, colour names are descriptive visual identifications, not certified supplier shade codes. Source compression limits render resolution.
 
 A Quantity column contains 400 for each of the 44 colourway rows, as requested (17,600 total).
+
+## Pantone references
+
+The Excel now has a **Pantone TCX Reference** column with garment-part allocations, TCX numbers, reference-library shade names and visible status flags. [Download the part-by-part colour reference CSV](Pantone_References_By_Colour.csv). The workbook remains one sheet with 44 colourways, 44 images and Quantity 400 per row.
+
+- **[PDF]**: printed in the user's final PDF, with the number/name located in the checked reference dataset. This does not certify the physical colour match.
+- **[PROPOSED]**: a suggested TCX design reference from render appearance. These are not exact measured matches or production-approved shades. Display names may differ from Pantone reference-library names.
+- The PDF's **Eucalyptus 19-0223 TCX** and **Earthy Brown 19-2421 TCX** could not be located in the checked reference dataset. Their rows are highlighted; supplier verification is required. Proposed alternatives are **16-0110 TCX Desert Sage** and **18-1222 TCX Cocoa Brown**, respectively. Source-label codes are preserved in comments, not presented as validated production codes.
+- Numbers and reference-library names were cross-checked using [pantone-tcx 2.2.4](https://www.npmjs.com/package/pantone-tcx) ([source repository](https://github.com/pedroduke/pantone-tcx), ISC licence). This is a third-party digital dataset, not official Pantone certification.
+- Approve every colour against a current physical Pantone FHI TCX cotton standard and the actual yarn / knit lab dip before production. Lighting, compression, yarn fibre and screen rendering prevent exact physical matching from these images alone.
+
+Pantone additions apply to the Excel and CSV. Earlier labelled PDF and Canva-importable presentation retain their existing colour-name labels.
