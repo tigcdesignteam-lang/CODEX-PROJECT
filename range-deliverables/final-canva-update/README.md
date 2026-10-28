@@ -21,4 +21,4 @@ Existing IDs are preserved by matching garment designs. ST-08 essential crew is 
 
 The final PDF supersedes earlier render concepts, including ST-11's back graphic placement and V neckline, ST-14/15 palettes, and ST-18/19 fabric labels. Other than source-embedded names, colour names are descriptive visual identifications, not certified supplier shade codes. Source compression limits render resolution.
 
-The original unspecified column-J values have been removed from the simplified Excel as requested.
+A Quantity column contains 400 for each of the 44 colourway rows, as requested (17,600 total).
