@@ -13,7 +13,7 @@ Open a file on GitHub and choose **Download raw file**. Import the PowerPoint in
 
 19 designs, 44 colourways. PDF pages 6 and 7 each contain five colourways; page 10 contains three; page 11 contains one colourway shown front/back with badge detail; all other pages contain two. Colour names match across Excel, PDF, presentation and CSV.
 
-The Excel has been simplified as requested: only the former Sheet-02, Style Catalog, remains. It contains 44 colourway rows and 44 final render images. Style Description, Source PDF Page, Style Colourway Count, Colourway Position, Colour Name Source, Changes / Notes, Final Back, and Final Detail columns were removed. All other workbook sheets, including Read Me, were deleted.
+The Excel has been simplified as requested: only the former Sheet-02, Style Catalog, remains. It contains 44 colourway rows and 44 final render images. Style Description, Source PDF Page, Style Colourway Count, Colourway Position, Colour Name Source, Changes / Notes, Final Back, Final Detail, and Original J Value (unit unspecified) columns were removed. All other workbook sheets, including Read Me, were deleted.
 
 ## Style mapping
 
@@ -21,4 +21,4 @@ Existing IDs are preserved by matching garment designs. ST-08 essential crew is 
 
 The final PDF supersedes earlier render concepts, including ST-11's back graphic placement and V neckline, ST-14/15 palettes, and ST-18/19 fabric labels. Other than source-embedded names, colour names are descriptive visual identifications, not certified supplier shade codes. Source compression limits render resolution.
 
-Original column-J values of 400 are preserved for existing mapped rows, without assigning a unit. Nine new colourway rows have blank values because revised quantities were not supplied.
+The original unspecified column-J values have been removed from the simplified Excel as requested.
